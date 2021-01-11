@@ -1,0 +1,120 @@
+body, html {
+    background-color: #ffe8fc;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 100%;
+    overflow: hidden;
+  }
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: Orbitron, Arial, Helvetica, sans-serif;
+    font-size: 6em;
+    color: #fffb2b;
+    text-shadow: 2px 2px 5px #3eccd1;
+    margin-top: .25em;
+    margin-bottom: .25em;
+  }
+
+
+/* Table styling */
+
+table {
+    margin-top: 5em;
+    visibility: hidden;
+    border: 3px solid #3eccd1;
+    border-radius: 20px;
+    color: #15777a;
+    box-shadow: 0 0 20px #fffb2b;
+    font-family: Orbitron, Arial, Helvetica, sans-serif;
+    background-color: #ffffe7;
+    border-spacing: 0;
+}
+
+th { border-bottom: 1px solid #3eccd1;
+
+}
+
+td, th {
+    padding: 1em;
+}
+
+/* Button styling */
+
+/* Majority of the styling modified from https://codepen.io/avvign/pen/NVJzQW */
+
+#seeMyDegrees {
+    margin-top: 5em;
+}
+
+.btn:link, .btn:visited {
+    font-family: Orbitron, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    border: 1px solid #3eccd1;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fffb2b;
+    color: #3eccd1;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: rgba(62, 204, 209, 0.295)
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

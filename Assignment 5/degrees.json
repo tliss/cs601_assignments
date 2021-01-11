@@ -1,0 +1,28 @@
+{
+	"myDegrees": [
+        {
+			"degree": {
+				"school": "University of Massachusetts: Dartmouth",
+				"major": "History and Sociology-Anthropology",
+				"type": "B.S.",
+				"year": 2010
+			}
+		},
+        {
+			"degree": {
+				"school": "Boston University",
+				"major": "TESOL",
+				"type": "M.Ed.",
+				"year": 2013
+			}
+        },
+        {
+			"degree": {
+				"school": "Boston University",
+				"major": "Computer Science",
+				"type": "M.S",
+				"year": 2021
+			}
+		}
+	]
+}

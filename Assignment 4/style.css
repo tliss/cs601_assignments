@@ -1,0 +1,169 @@
+body, html {
+  /* text-align: center; */
+  background-color: #F1F7ED;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: Pacifico, Arial, Helvetica, sans-serif;
+  font-size: 6em;
+  color: #BFD8BD;
+  text-shadow: 2px 2px #85B79D;
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+
+#mainSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mainFieldset {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
+}
+
+fieldset {
+  display: inline-block;
+  border: 2px solid #243E36;
+  text-align: center;
+  width: 248px;
+  border-radius: 20px;
+  background-color: #BFD8BD;
+}
+
+.identityRow {
+  margin-bottom: 10px;
+}
+
+.identityRow:first-child {
+  margin-top: .75em;
+}
+
+label {
+  font-family: Kanit, Arial, Helvetica, sans-serif;
+  color: #243E36;
+}
+
+.identityRow > label {
+  display: inline-block;
+  min-width: 5em;
+  text-align: right;
+  margin-right: .25em;
+}
+
+input[type=text] {
+  width: 10em;
+  border-color: #243E36;
+  background-color: #F1F7ED;
+  text-align: center;
+}
+
+/* Radio button & checkbox styling */
+#dessertFieldset, #classesFieldset{
+  display: block;
+  padding-top: 0px;
+  margin-bottom: .75em;
+}
+
+legend {
+  font-family: Kanit, Arial, Helvetica, sans-serif;
+  text-align: left;
+  color: #243E36;
+}
+
+.dessertRow {
+  display: inline-block;
+  text-align: right;
+  margin-right: 1em;
+}
+
+.dessertRow:last-child {
+  margin-right: 0em;
+}
+
+input[type=radio] {
+  margin: 0;
+}
+
+.classesRow {
+  text-align: left;
+  float: left;
+  clear: both;
+}
+
+#classesWrapper {
+  display: inline-block;
+}
+
+/* Error field styling */
+#errorField {
+  text-align: left;
+  font-family: Kanit, Arial, Helvetica, sans-serif;
+  padding: 12px;
+  margin-top: 1em;
+  width: 276px;
+  /* display: inline-block;
+  clear: both; */
+  border: 2px solid rgb(255, 34, 34);
+  border-radius: 20px;
+  background-color: rgb(255, 167, 167);
+  visibility: hidden;
+  color: rgb(173, 19, 19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 1;
+}
+
+/* Button styling */
+button {
+  font-family: Kanit, Arial, Helvetica, sans-serif;
+  background-color: #F1F7ED;
+  border: solid #243E36;
+  color: #243E36;
+  border-radius: 7px;
+  text-align: center;
+  padding: .5em 1em;
+  font-size: 1em;
+  box-shadow: 0 .4em #999;
+  margin-bottom: .5em;
+  cursor: pointer;
+}
+
+/* Make it look like button is being clicked */
+button:active {
+  box-shadow: 0 .2em #666;
+  transform: translateY(4px);
+}
+
+/* Remove border when clicked */
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: rgb(213, 221, 207);
+  border: solid rgb(26, 54, 46);
+}
+
+/* Image styling */
+#frog {
+  position: fixed;
+  margin: 0 0 0 10em;
+  padding: 0;
+  z-index: 0;
+  display: inline-block;
+  left: 0;
+  bottom: 0;
+}
+
+#tulip {
+  position: fixed;
+  margin: 0 10em 0 0;
+  padding: 0;
+  z-index: 0;
+  display: inline-block;
+  right: 0;
+  bottom: 0;
+}

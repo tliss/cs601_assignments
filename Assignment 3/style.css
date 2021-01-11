@@ -1,0 +1,183 @@
+body {
+  text-align: center;
+  background-color: #F2CCC3;
+}
+
+h1 {
+  font-family: Lobster, Arial, Helvetica, sans-serif;
+  font-size: 6em;
+  color: #DF57BC;
+  text-shadow: 2px 2px #A03E99;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+/* Glow for the header */
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #A03E99, 0 0 40px #A03E99, 0 0 50px #A03E99, 0 0 60px #A03E99, 0 0 70px #A03E99;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+/* Controls the hearts' positioning */
+#hearts {
+  position: absolute;
+  transform: scale(.5, .5) rotate(30deg);
+  top: -100px;
+  right: -200px;
+}
+
+/* Button stylings */
+.button {
+  font-family: Bangers, Arial, Helvetica, sans-serif;
+  background-color: #EF709D;
+  border: solid #DF57BC;
+  color: #A03E99;
+  border-radius: 7px;
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  width: 175px;
+  box-shadow: 0 9px #999;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+/* Make it look like button is being clicked */
+.button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Remove border when clicked */
+.button:focus, #closeForm:focus, #addBtn:focus {
+  outline: none;
+}
+
+.button:hover, #closeForm:hover, #addBtn:hover {
+  background-color: rgb(202, 95, 132);
+  border: solid rgb(173, 68, 147);
+}
+
+p {
+  font-family: Bangers, Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 46px;
+  color: #DF57BC;
+  text-shadow: 2px 2px #A03E99;
+  text-align: center;
+  margin: 10px;
+}
+
+p:first-child {
+  margin-top: 40px;
+}
+
+/* For the addition box */
+#numFormBox {
+  visibility: hidden;
+  opacity: 0;
+  background-color: #EF709D;
+  border: solid #DF57BC;
+  border-radius: 7px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  margin-left: -155px;
+  height: 200px;
+  margin-top: -75px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#closeForm {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  right: 0;
+  background-color: #EF709D;
+  border: solid #DF57BC;
+  color: #A03E99;
+  margin: 5px;
+  width: 1.2em;
+  height: 1.2em;
+  text-align: center;
+  line-height: 1.2em;
+  border-radius: 7px;
+  cursor: pointer;
+  box-shadow: 0 3px #999;
+  position: absolute;
+}
+
+#closeForm:active, #addBtn:active{
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+}
+
+#numForm {
+  font-size: 1.75em;
+  width: auto;
+  margin-top: 55px;
+  font-family: Bangers, Arial, Helvetica, sans-serif;
+  color: #A03E99;
+}
+
+input[type=text] {
+  width: 20%;
+  float: right;
+  margin-right: 30px;
+  margin-top: 12px;
+  border-radius: 8px;
+  border-color: #DF57BC;
+  color: #A03E99;
+  font-family: Lobster, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #F2CCC3;
+}
+
+input[type=text]:focus {
+  outline: none;
+}
+
+label {
+  float: left;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+#addBtn{
+  height: 30px;
+  font-family: Bangers, Arial, Helvetica, sans-serif;
+  background-color: #EF709D;
+  border: solid #DF57BC;
+  color: #A03E99;
+  border-radius: 7px;
+  text-align: center;
+  font-size: 18px;
+  box-shadow: 0 9px #999;
+  cursor: pointer;
+  box-shadow: 0 3px #999;
+  padding-right: 8px;
+}
+
+.fadeIn {
+  animation: fadeIn .125s linear forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; } 
+}
+
+.fadeOut {
+  animation: fadeOut .125s linear forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity:1; }
+  100% { opacity:0; } 
+}

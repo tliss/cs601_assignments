@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers">
+</head>
+<body>
+    <main>
+        <section>
+            <h1 id="greeting">Welcome</h1>
+            <img src="hearts.png" alt="hearts" id="hearts">
+            <button class="button" onclick="adder()">Add some numbers Ver. 1</button>
+            <!-- <button class="button" onclick="openNumForm()">Add some numbers Ver. 2</button> -->
+            <button class="button" onclick="fadeInForm()">Add some numbers Ver. 2</button>
+            <div id="numFormBox">
+                <div id="closeForm" onclick="fadeOutForm()">X</div>
+                <div id="numForm">
+                    <label for="firstNumber">First number:</label>
+                    <input type="text" id="firstNumber" name="firstNumber"><br>
+                    <label for="secondNumber">Second number:</label>
+                    <input type="text" id="secondNumber" name="secondNumber"><br><br>
+                    <button id="addBtn" onclick="adder2()">Submit</button>
+                </div>
+            </div>
+            <div id="logger"></div>
+        </section>
+    </main>
+</body>
+</html>

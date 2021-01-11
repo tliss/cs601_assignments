@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Form Demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+</head>
+<body>
+    <main>
+        <section id="mainSection">
+            <h1>Who are you?</h1>
+            <fieldset id="mainFieldset">
+                <form action="http://bucs601.com/submit.php" method="post" novalidate onsubmit="return myValidator()">
+                    <div class="identityRow">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" required>
+                    </div>
+                    <div class="identityRow">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" name="lastName" id="lastName" required>
+                    </div>
+                    <div class="identityRow">
+                        <label for="facilitator">Facilitator:</label>
+                        <input type="text" name="facilitator" id="facilitator" required>
+                    </div>
+                    <fieldset id="dessertFieldset">
+                        <legend>Dessert?</legend>
+                        <div class="dessertRow">
+                            <input type="radio" name="dessert" id="cake">
+                            <label for="cake">Cake</label>
+                        </div>
+                        <div class="dessertRow">
+                            <input type="radio" name="dessert" id="pie">
+                            <label for="pie">Pie</label>
+                        </div>
+                        <div class="dessertRow">
+                            <input type="radio" name="dessert" id="iceCream">
+                            <label for="iceCream">Ice Cream</label>
+                        </div>
+                    </fieldset>
+                    <fieldset id="classesFieldset">
+                        <legend>Classes?</legend>
+                        <div id="classesWrapper">
+                            <div class="classesRow">
+                                <input type="checkbox" name="anthropology" id="anthropology">
+                                <label for="anthropology">Anthropology</label>
+                            </div>
+                            <div class="classesRow">
+                                <input type="checkbox" name="history" id="history">
+                                <label for="history">History</label>
+                            </div>
+                            <div class="classesRow">
+                                <input type="checkbox" name="computerScience" id="computerScience">
+                                <label for="computerScience">Computer Science</label>
+                            </div>
+                            <div class="classesRow">
+                                <input type="checkbox" name="art" id="art">
+                                <label for="art">Art</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
+            </fieldset>
+            <div id="errorField">
+                <p>The following errors were detected:</p>
+                <ul id="errorMessage"></ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="frog.png" alt="frog" id="frog">
+        <img src="tulip.png" alt="tulip" id="tulip">
+    </footer>
+</body>
+</html>
